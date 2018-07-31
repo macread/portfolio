@@ -25,7 +25,7 @@
 
 .iconwrapper {
 	width: 100%;
-	height: 75px;
+	height: 100px;
 	display: flex;
 }
 
@@ -47,4 +47,8 @@
 	padding: 0;
 	width: 100%;
 	display: list-item;
+}
+
+.features > .container {
+	/* height: 100px; */
 }
