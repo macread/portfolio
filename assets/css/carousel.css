@@ -36,6 +36,15 @@
     transform: rotate(180deg);
 }
 
+.ext-link {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 250px;
+    display: block;
+    height: 100%;
+}
+
 .light {
     color: white;
 }
@@ -48,7 +57,7 @@
     }
 }
 
-}
+
 
 /*Select every element*/
 
@@ -87,4 +96,37 @@
     opacity: 1;
 }
 
+.item-4 {
+    z-index: 2;
+    opacity: 1;
+    background: url('../../images/gpLanding.png');
+    background-size: cover;
+}
+
+.item-5 {
+    background: url('../../images/gpupload.png');
+    background-size: cover;
+}
+
+.item-6 {
+    background: url('../../images/gpview.png');
+    background-size: cover;
+}
+
+*:target~.item-4 {
+    opacity: 0;
+}
+
+#item-4:target~.item-4 {
+    opacity: 1;
+}
+
+#item-5:target~.item-5,
+#item-6:target~.item-6 {
+    z-index: 3;
+    opacity: 1;
+}
+
+#pp.carousel-wrapper {
+    margin-top: 78px;
 }
